@@ -1,0 +1,86 @@
+Sesi - 02
+
+Struktur File HTML :
+----------------------------------------------------------------
+    <!DOCTYPE HTML>
+    <HTML>
+
+        <head>
+            <title> Judul File HTML </title>
+        </head>
+
+        <body>
+            Website <strong> <em> Pertama </em> </strong> Saya
+        </body>
+    </HTML>
+----------------------------------------------------------------
+
+
+Tag HTML :
+----------------------------------------------------------------
+    1. <em> </em>   : Untuk huruf Miring
+    2. <strong> </strong>  : Untuk menebalkan Huruf
+    3. <b> </b> : Untuk menebalkan Huruf sama dengan strong
+    4.  <img src = "gambar.jpg"/> : Memuat Gambar  
+            
+            *src : Untuk menentukan lokasi (URL) dari gambar yang akan ditampilkan
+                <img src = "gambar.jpg" alt = "Ini adlaah teks alternatif" width=378 height=234 />
+    
+        Macam cara menampilkan gambar :
+        -------------------------------
+            - Dalam folder :
+                <img src = "images/logo.jpg" alt = "Ini adlaah teks alternatif" width=378 height=234 />
+
+             -Dari direktori yang sama dengan file HTML kita (Misal lupa di folder mana) :
+                <img src = "./gambarku.jpg" alt = "Ini adlaah teks alternatif" width=378 height=234 />
+
+            - Dari internet :
+                <img src = "https://google.com/images/logo.jpg" alt = "Ini adlaah teks alternatif" width=378 height=234 />
+
+        ----------------------------------
+ 
+    5. <a> </a> : Memuat link
+        < a href = https://www.alamat-tujuan.com> disini </a>   : Untuk mendownload
+
+    6. Membuat Daftar / List
+        6a. ol (Ordered List)   : List ber-urut
+        6b. ul (Unordered List) : List Tidak Ber-urut
+
+        Type - type List : 
+        a. Huruf  :  <ol type = "A">
+        b. Romawi :  <ol type = "I">
+
+            *Note : <li> </li>  : Default nya berupa Angka
+
+
+
+
+    7. <table> </table> : Membuat table
+        - Struktur Table :
+    -------------------------- 
+        <table style="border: 1px;">
+            <!-- header -->
+            <thead>
+                <tr>No</tr>
+                <tr>Nama</tr>
+            </thead>
+
+            <!-- Data Content -->
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+
+            <!-- Informasi Akhir -->
+            <tfoot>
+                <tr>
+                    <td rowspan="2" colspan="2">Total Data</td>
+                </tr>
+            </tfoot>
+        </table>
+        ------------------------------
+
+
+   

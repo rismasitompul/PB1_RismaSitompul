@@ -1,0 +1,120 @@
+SESI - 03 | CSS
+---------------
+   - Class : Tidak Unik  ( Untuk manggil nya biasanya menggunakan . "titik")
+   - Id : Bersifat Unik  (Untuk manggil nya biasanya menggunakan # "Tanda Pagar")
+
+Comment CSS 
+------------
+
+    <!-- This is comment -->
+    /this is comment/
+
+Menempatkan Style :
+-------------------
+    1. Inline CSS : didalam element HTML 
+    3. Internal CSS : Membuat tag <style> didalam tag <head>
+
+            <!-- Internal CSS -->
+            <style>
+                h1 {
+                    background-color: rgb(95, 185, 170);
+                    color: rgb(26, 26, 95);
+                    font-size: 25px;
+                }
+                .artikel {
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+
+            </style>
+
+    3. External CSS : Membuat file CSS terpisah dan menghubungkan dengan file HTML,
+                    diletakkan di dalam head <link rel="stylesheet" href="style.css" />
+            
+            <!-- External CSS -->
+            <link rel="stylesheet" href="style.css">
+
+Sering digunakan 
+    1. font-size : 25px;
+    2. Untuk property  (Di google): Font Awesome CDN
+    3. Ekstensin font : font ninja (chrome)
+    4. Extensiion Color : collor zilla (chrome)
+    5. Check bootstrapmade
+
+Position
+---------
+1. Relative
+2. Static
+3. Absolute
+4. Fixed
+
+
+min-width : dapat dari ? responsif ? search ?
+
+ Margin & Padding 
+    ****************
+
+                                TOP
+
+
+                         -->   MARGIN  <-- 
+                -------------------------------------
+                |        -->   BORDER  <--          |
+                |   ----------------------------    |
+                |   |   -->    PADDING   <--   |    |
+                |   |   -------------------    |    |
+        LEFT    |   |   |     >> TEXT <<   |   |    |    RIGHT
+                |   |   |                  |   |    |   
+                |   |   -------------------    |    |   
+                |   |                          |    |
+                |   ---------------------------     |
+                |                                   |
+                -------------------------------------
+             
+                                BOTTOM
+
+        *height : Vertikal (Tinggi)
+        *width : Horizontal (Lebar)
+
+
+
+-------------------------------------------
+GIT atau github : 
+>diinstal "git scm" > terminal (default)
+> diinstal "github desktop" > on gui > ui / ux
+
+
+git
+
+
+
+1. tentang css
+	> extension google chrom (tools pendukung)
+  - color zila (pick color hexa/rgb/cmyk)
+  - font ninja (deteksi font)
+2. git (cloud storage)
+	- install git scm
+	- registrasi/login github > https://github.com/
+langkah github:
+  1. install git (selesai proses instalasi)
+  2. buat akun github/login akun github
+  3. buat repository
+  4. settings token classic
+  5. management data koding > push
+
+
+git add .
+git commit -m "update"
+git push
+
+ctrl + j
+shift + insert
+----------------
+echo "# PB1_RismaSitompul" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/rismasitompul/PB1_RismaSitompul.git
+git push -u origin main
+
