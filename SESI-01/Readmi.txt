@@ -1,0 +1,19 @@
+SESI -01
+-------
+
+Membuat file HTML 
+
+Struktur File HTML :
+----------------------------------------------------------------
+    <!DOCTYPE HTML>
+    <HTML>
+
+        <head>
+            <title> Judul File HTML </title>
+        </head>
+
+        <body>
+            Website <strong> <em> Pertama </em> </strong> Saya
+        </body>
+    </HTML>
+----------------------------------------------------------------

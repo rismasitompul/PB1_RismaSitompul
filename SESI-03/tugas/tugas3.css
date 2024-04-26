@@ -1,0 +1,111 @@
+html {
+  background-color: #B4B4B8;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  background-color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 20px 12px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 6px;
+}
+
+nav ul li a:hover {
+  background-color: aliceblue;
+}
+
+section {
+  margin: 20px;
+}
+
+
+form {
+  background-color: #B4B4B8;
+}
+
+form input {
+  width: 30%;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 400px;
+  height: 30px;
+}
+
+form input[type="submit"] {
+  display: inline-block;
+  font-size: 14px;
+  background-color:hsla(209, 58%, 22%, 0.712);
+  color: white;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #3e778e;
+}
+
+form input[type="submit"]:active {
+  background-color: #8a89af;
+}
+
+#profile .profile-text {
+  padding-bottom: 20px;
+}
+#profile .profile-text h1{
+    color: #212050;
+}
+
+#profile .profile-text h3 {
+  color: rgb(34, 50, 78);
+}
+
+
+.action button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #116A7B;
+  color: #FFFFFF;
+  transition: background-color 0.3s;
+}
+
+.action button:hover{
+  background-color: #386d75;
+}
+
+.button:active {
+  background-color: #3e778e;
+}
+
+#detail {
+  padding-bottom: 50px;
+}
+
+
+
