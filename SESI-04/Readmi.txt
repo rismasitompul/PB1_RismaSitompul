@@ -17,3 +17,51 @@ Flowchart
         1. System Flowchart , menunjukkan alat media input, output serta jenis penyimpanan dakam proses pengolahan data
         2. Program Flowchart, urutan instruksi yang digambarkan dengan symbol tertentu untuk memecahkan masalah dalam suatu program.
         
+
+Penulisan Conditional 
+----------------------
+
+let kondisi = "lapar";
+// MultiLine
+    if(kondisi != "lapar") {
+        console.log("Iam Happy")
+    } else {
+        console.log("I Want To Eat");
+    }
+
+// Singgle Line
+    if(kondisi != "lapar") 
+        console.log("Iam Happy");
+        else console.log("pengen makan");
+
+
+TUGAS SESI - 04
+------------------------------------------------------------------------------------
+
+(algoritma)
+tugas: menghitung luas dan keliling lingkaran
+
+1. menghitung luas dan keliling lingkaran
+  title = menghitung luas dan keliling lingkaran
+
+2. input input yang diperlukan untuk menghitung luas dan keliling lingkaran
+    let ... = 
+    let ... =
+    if ...
+    console ....
+
+3. perhitungan dari > menghitung luas dan keliling lingkaran
+    pi....
+
+4. untuk tampilkan hasil kalkulasi
+    show = output hasil dari menghitung luas dan keliling lingkaran
+
+
+(code)
+.......
+
+
+(hasil/output dari koding)
+screenshot aplikasi > inspect element > jika menggunakan console
+
+------------------------------------------------------------------------------------

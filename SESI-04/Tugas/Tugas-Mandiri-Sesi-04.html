@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Sesi - 04 | Menghitung Luas dan Keliling Lingaran</title>
+    <style>
+        h3 {
+            color: rgb(29, 161, 51);
+        }
+        
+        .keterangan {
+            background-color: #9adbdd;
+        }
+
+        span {
+            color: rgb(23, 23, 138);
+            font-weight: bold;
+        }
+
+        .line {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h3>Menghitung Luas dan Keliling Lingkaran</h3>
+        <p class="line">---------------------------------------------------------------</p>
+        <table class="keterangan">
+            <tr>
+                <td><b>Rumus Luas Lingkaran </b></td>
+                <td>= PI x r x r</td>
+            </tr>
+            
+            <tr>
+                <td><b>Rumus Keliling Lingkaran</b></td>
+                <td>= 2 x PI x r</td>
+            </tr>
+
+            <tr>
+                <td><b>Radius (r)</b></td>
+                <td>= Jari - Jari Lingkaran</td>
+            </tr>
+
+            <tr>
+                <td><b>PI</b></td>
+                <td>: 3.14</td>
+            </tr>          
+        </table>
+        <p class="line">---------------------------------------------------------------</p>
+        <br>
+
+        <!-- <p><b>Nilai Jari - Jari yang akan di gunakan kali ini :</b> 7</p> -->
+        <p><b>Hasil Perhitungan dari Luas Lingkaran dan Keliling Lingkarang <br> dengan <span>jari - jari</span> adalah <span>7</span> yaitu :</b></p>
+        <p class="line">-----------------------------------------------------------------------------------</p>
+
+
+  <script>
+   let r = 7;
+
+    //Menghitung Luas Lingkaran
+    let luas;
+    if (r >= 0) {
+        luas = Math.PI * r * r;
+        document.write(`<b>Luas Lingkaran </b> <br>
+                        ---------------------- <br>
+                        = Pi x r x r <br> 
+                        = 3.14 x 7 x 7 <br>
+                        =  ${luas}  <br><br>`);
+    } else {
+        document.write(`<b> Jari - jari jangan angka negatif yaaa...</b><br>`);
+    }
+
+    //Menghitung Keliling Lingkaran
+   
+    if (r >=0) {
+        let keliling = 2 * Math.PI * r ;
+        document.write(`<b>Luas Lingkaran </b> <br>
+                        ---------------------- <br>
+                        = 2 x PI x r <br> 
+                        = 2 x 3.14 x 7 <br>
+                        =  ${keliling}`);
+    }
+  </script>
+  <p class="line">-----------------------------------------------------------------------------------</p>
+
+</body>
+</html>
