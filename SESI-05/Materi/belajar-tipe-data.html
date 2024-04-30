@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Tipe Data</title>
+</head>
+<body>
+    
+    <!-- id Hasil -->
+    <div id="hasil"></div>
+
+
+    <script>
+         // Tipe data Var, Const, Let
+
+         //Tipe data Number
+         var angka = 80;
+          document.getElementById("hasil").innerHTML=angka;
+
+        // Tipe Data String
+        let kalimat = "Belajar JavaScript";
+
+        document.getElementById("hasil").innerHTML=kalimat;
+
+        // Tipe data Array
+        let mobil = ["Avanza", "Ferari", "Toyota"];
+
+        document.getElementById("hasil").innerHTML = mobil[1];
+        document.getElementById("hasil").innerHTML = mobil[2];
+
+        // Tipe Data Object
+
+        let manusia = {
+            nama : "Bryan",
+            asal : "London",
+            usia : "22",
+        };
+
+        Document.getElementById("hasil").innerHTML = manusia.nama + "tinggal di" + manusia.asal;
+        
+
+    </script>
+</body>
+</html>

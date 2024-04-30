@@ -1,0 +1,536 @@
+SESI-05 | Belajar Javascript
+
+<!-- File External -->
+    <script src="latihan.js"></script>
+
+ <!-- File - Internal | Dalam file body-->
+    <script>
+        console.log("Hi! Ini Kode Javascript");
+    </script>
+
+-------------
+Variable JS :
+1. Var 
+2. Let
+3. Const
+-------------
+
+TIPE DATA Javascript
+--------------------------------------------------------
+
+ <script>
+         // Tipe data Var, Const, Let
+
+         //Tipe data Number
+         var angka = 80;
+          document.getElementById("hasil").innerHTML=angka;
+
+        // Tipe Data String
+        let kalimat = "Belajar JavaScript";
+
+        document.getElementById("hasil").innerHTML=kalimat;
+
+        // Tipe data Array
+        let mobil = ["Avanza", "Ferari", "Toyota"];
+
+        document.getElementById("hasil").innerHTML = mobil[1];
+        document.getElementById("hasil").innerHTML = mobil[2];
+
+        // Tipe Data Object
+
+        let manusia = {
+            nama : "Bryan",
+            asal : "London",
+            usia : "22",
+        };
+
+        Document.getElementById("hasil").innerHTML = manusia.nama + "tinggal di" + manusia.asal;
+        
+
+    </script>
+------------------------------------------------------------------------------------
+
+
+- getElementById
+- innerHTML
+
+------------------------------------------------------------------------------------
+
+
+Function
+------------------------------------------------------------------------------
+// Function
+        function namaFungsi(){
+            console.log("Hi! Ini Kode Javascript");
+        }
+
+ // Menampilkan pesan dari Function
+        function tampilkan_nama(){
+            return "Hacktive Front End Developer";
+        }
+
+            document.getElementById("hasil").innerHTML=tampilkan_nama();
+
+-------------------------------------------------------------------------------
+
+Event Dalam JS
+-------------
+ <!-- Memberikan event onClick pada button -->
+    <button onclick="tampilkan_nama()" >KLIK INI</button>
+
+    <!-- id hasil -->
+    <div id="hasil"></div>
+
+    <script>
+       function tampilkan_nama(){
+        document.getElementById("hasil").innerHTML = "Nama Saya Adalah";
+       }
+        
+    </script>
+---------------------------------------------------------------------------------
+
+
+4 Cara Menampilkan Output :
+--------------------------
+- Console.log();  -> Menampilkan teks ke console Javascript
+- alert();  -> Menampilkan jendela dialog | Peringatan
+- document.write();  -> menulis sesuatu ke dalam dokumen HTML 
+- innner.HTML 
+
+---------------------------
+
+Resume ??
+JSON  
+typeOf
+AJAX
+W3schools.com -> For Study
+
+3 Macam jendela dialog Javascript :
+----------------------------------
+- alert();  -> Menampilkan Peringatan
+- confirm();  -> Untuk Melakukan tindakan tertentu
+- prompt();  -> Mengambil suatu inputan
+--------------------------------------
+
+
+
+
+
+
+
+SESI HARI INI 
+----------------
+
+code belajar Java script (1)
+---------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar JS</title>
+  </head>
+  <body>
+    <h3>Belajar JS</h3>
+
+    <!-- contoh data java script (type data) -->
+    <div id="nama"></div>
+    <div id="lokasi"></div>
+    <div id="angka"></div>
+    <!-- contoh data java script (artimatika) -->
+    <div id="tambah"></div>
+    <div id="kurang"></div>
+    <div id="bagi"></div>
+    <div id="kali"></div>
+    <div id="mod"></div>
+
+    <!-- action button -->
+    <button onclick="panggilNamaSaya()">Panggil Nama Saya</button>
+    <div id="hasil"></div>
+
+    <script>
+      console.log("belajar js");
+
+      /*
+            tipe data
+            integer  = 1,2,10,100,dll
+            double/float = 1.2, 5.01
+            string = Aa!@#123 (all karakter)
+            char = 'A' > memory
+            boolean/byte = true/false > 0/1
+            datetime/timestamp = tanggal dan waktu
+            enum = "roda dua, roda empat" > roda satu
+            object = {
+                "nama": "arif",
+                "alamat":"indonesia"
+            }
+            array = [
+                1 = > [
+                    "nama": "arif",
+                    "alamat":"indonesia"
+                ],
+                2 = > [
+                    "nama": "arif",
+                    "alamat":"indonesia"
+                ]
+            ]
+
+            json > object/array
+            xml >
+        */
+
+      let nilai = 90;
+      let hasil = "tidak ada";
+      if (nilai > 0 && nilai <= 49) {
+        hasil = "E";
+      }
+      console.log("hasil nilai : " + hasil);
+
+      // let, const, var
+      let nama = "Arif";
+      let lokasi = "Indonesia";
+
+      // pemanggilan nama dan lokasi (console)
+      console.log(nama);
+      console.log(lokasi);
+      // pemanggilan nama dan lokasi (inner html)
+      document.getElementById("nama").innerHTML = "contoh data : " + nama;
+      document.getElementById("lokasi").innerHTML = "contoh data : " + lokasi;
+
+      // angka
+      let angka = 10.2;
+      // string
+      let data = "A";
+      // boolean
+      let benar = true;
+      console.log(typeof angka); //
+      console.log(typeof data);
+      document.getElementById("angka").innerHTML =
+        "angka nya adalah : " + angka;
+
+      // array
+      let mobil = ["avanza", "brio", "crv"];
+      console.log("nama mobil : " + mobil);
+      console.log("nama mobil : " + mobil[0]);
+      console.log(typeof mobil);
+
+      //   object
+      let biodata = {
+        nama: "arif",
+        jenkel: "laki-laki",
+        id: "ID",
+      };
+      console.log("nama anda : " + biodata.nama);
+      console.log(typeof biodata);
+
+      console.log("====================");
+
+      let bilangan1 = 6;
+      let bilangan2 = 2;
+      //   tambah, kali, bagi, kurang, mod
+      let tambah = bilangan1 + bilangan2;
+      let kali = bilangan1 * bilangan2;
+      let bagi = bilangan1 / bilangan2;
+      let kurang = bilangan1 - bilangan2;
+      let mod = bilangan1 % bilangan2;
+      document.getElementById("tambah").innerHTML =
+        "<br>bilangan 1 : " +
+        bilangan1 +
+        "<br> bilangan 2 : " +
+        bilangan2 +
+        "<br> hasilnya adalah = " +
+        tambah;
+
+      // diluar function
+      console.log("bilangan 1 : " + bilangan1);
+      console.log("bilangan 2 : " + bilangan2);
+
+      //   panggil function return
+      console.log(panggilNama());
+
+      // dalam function
+      perhitungan(bilangan1, bilangan2);
+
+      function perhitungan(bilangan1, bilangan2) {
+        console.log("bilangan 1 : " + bilangan1);
+        console.log("bilangan 2 : " + bilangan2);
+        console.log("nama saya : " + panggilNama());
+      }
+
+      function panggilNama() {
+        return "arif setiawan";
+      }
+
+      function panggilNamaSaya() {
+        document.getElementById("hasil").innerHTML = panggilNama();
+        console.log(panggilNama());
+      }
+    </script>
+  </body>
+</html>
+
+
+
+code belajar java script (2)
+---------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Kondisi</title>
+  </head>
+  <body>
+    <h3>Belajar Kondisi</h3>
+    <div id="hasil">Arif Setiawan</div>
+
+    <br />
+    <label for="">Masukan data makanan</label>
+    <br />
+    <input type="text" id="makanan" placeholder="input data makanan" />
+
+    <button onclick="simpanMakan()">Simpan Makan</button>
+
+    <script>
+      let makanan = document.getElementById("makanan");
+      function simpanMakan() {
+        // get value (dari input text)
+
+        let output = "<ol>";
+        output += "<li>" + makanan.value + "</li>";
+        output += "</ol>";
+
+        document.getElementById("hasil").innerHTML = output;
+      }
+
+      let hasil = document.getElementById("hasil").innerHTML;
+
+      //   console.log(hasil);
+      let nama = "Arif Setiawan";
+
+      let contoh = ciEquals(hasil.toLowerCase, nama.toUpperCase);
+      console.log(contoh);
+      if (nama === hasil) {
+        console.log("benar 1");
+      }
+
+      if (nama == hasil) {
+        console.log("benar 2");
+      }
+
+      function ciEquals(a, b) {
+        return typeof a === "string" && typeof b === "string"
+          ? a.localeCompare(b, undefined, { sensitivity: "accent" }) === 0
+          : a === b;
+      }
+    </script>
+  </body>
+</html>
+-----------------------------------------------------------------------------------------------
+
+
+
+
+
+sesi 5:
+----------------------------------------------------
+best practice (nomor 1):
+
+dibuat batasan
+huruf mutu: a,b,c,d,e
+a = 80 s.d 100
+b = 70 s.d 79
+c = 60 s.d 69
+d = 50 s.d 59
+e = 0 s.d 49
+diluar dari nilai tersebut 0 s.d 100 > tidak ada (tidak ditemukan)
+
+code here huruf mutu:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Huruf Mutu</title>
+  </head>
+  <body>
+    <h3>Belajar Huruf Mutu</h3>
+    <div id="nilai">Nilai Anda : 30</div>
+    <div id="hasil">Huruf Mutu : A</div>
+    <script>
+      let nilai = 80;
+      let hasil = "";
+      if (nilai >= 80 && nilai <= 100) {
+        hasil = "A";
+      }
+
+      document.getElementById("nilai").innerHTML = "Nilai Anda : " + nilai;
+      document.getElementById("hasl").innerHTML = "Huruf Mutu : " + hasil;
+    </script>
+  </body>
+</html>
+
+Raynold Kennedy Lubis
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+ </head>
+ <body>
+  <h3>Belajar Huruf Mutu</h3>
+  <div id="nilai"></div>
+  <div id="hasil"></div>
+  <script>
+   let nilai = 60;
+   let hasil = "";
+   if (nilai >= 80 && nilai <= 100) {
+    hasil = "A";
+   } else if (nilai >= 70 && nilai <= 79) {
+    hasil = "B";
+   } else if (nilai >= 60 && nilai <= 69) {
+    hasil = "C";
+   } else if (nilai >= 50 && nilai <= 59) {
+    hasil = "D";
+   } else if (nilai >= 0 && nilai <= 49) {
+    hasil = "E";
+   } else {
+    hasil = "Tidak Ada";
+   }
+
+   document.getElementById("nilai").innerHTML = "Nilai Anda : " + nilai;
+   document.getElementById("hasil").innerHTML = "Hasil Mutu : " + hasil;
+  </script>
+ </body>
+</html>
+
+----------------------------------------------------
+best practice (nomor 2):
+contoh : click event dengan kondisi dan function
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Click Event</title>
+  </head>
+  <body>
+    <h3>Belajar Click Event</h3>
+    <!-- change > Klik Aku -->
+    <button id="button" onclick="ubahButton()">Halo YAL</button>
+    <div id="hasil"></div>
+    <script>
+      function ubahButton() {
+        let button = document.getElementById("button");
+        let hasil = document.getElementById("hasil");
+        let output = "";
+        if (button.innerHTML == "Halo YAL") {
+          button.innerHTML = "Klik Aku";
+          output = "Sudah di klik ya";
+        } else {
+          button.innerHTML = "Halo YAL";
+          output = "Belum di klik nih";
+        }
+        hasil.innerHTML = output;
+      }
+    </script>
+  </body>
+</html>
+
+----------------------------------------------------
+best practice (nomor 3):
+contoh : click maju mundur (increment - decrement)
+
+durasi (10 menit)
+start pengerjaan 20:35 
+selesai pengerjaan 20:45
+
+jika sudah, bisa diinfo (panggil) > presentasikan
+
+contoh code (dilanjutkan, dan diselesaikan):
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Mundur Maju</title>
+  </head>
+  <body>
+    <h3>Belajar Mundur Maju</h3>
+
+    <button>Mundur</button>
+    <button>Maju</button>
+    <div id="hasil">0</div>
+    
+    <script></script>
+  </body>
+</html>
+
+Raihan Yusuf Sa'ari
+<body>
+    <h3>Belajar Maju Mundur</h3>
+
+    <button id="hitungMundur">Hitung Mundur</button>
+    <button id="hitungMaju">Hitung Maju</button>
+    <div id="hasil">10</div>
+
+    <script>
+      let hasil = document.getElementById("hasil");
+      let tombolMundur = document.getElementById("hitungMundur");
+      let tombolMaju = document.getElementById("hitungMaju");
+      let count = 10;
+
+      tombolMundur.addEventListener("click", function () {
+        count--;
+        updateHasil();
+      });
+
+      tombolMaju.addEventListener("click", function () {
+        count++;
+        updateHasil();
+      });
+
+      function updateHasil() {
+        hasil.textContent = count;
+      }
+    </script>
+  </body>
+  
+  Raynold Kennedy Lubis
+  <body>
+  <h1>Hitung Mundur Maju :</h1>
+  <button onclick="mundur()">mundur</button>
+  <button onclick="maju()">maju</button>
+  <div id="hasil">10</div>
+  <script>
+   let a = 10;
+   let hasil = document.getElementById("hasil");
+   function mundur() {
+    document.getElementById("hasil").innerHTML = a--;
+    hasil.textContent = a;
+   }
+   function maju() {
+    document.getElementById("hasil").innerHTML = a++;
+    hasil.textContent = a;
+   }
+  </script>
+ </body>
+
+
+----------------------------------------------------
+
+sesi 3 (lanjutan):
+untuk yang belum git, bisa diinfokan disini ya, siapa aja yang belum:
+nama | link git (blm di check)
+
+untuk tugas sesi 3 dan 4 jika yang belum (bisa diinfo disini):
+nama | kendala
+
+----------------------------------------------------
+
+
+
+
+

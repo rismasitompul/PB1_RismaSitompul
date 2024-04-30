@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3 | Maju Mundur</title>
+</head>
+<body>
+    
+    <h3>Menampilkan Angka Maju Mundur</h3>
+    <p>Dimulai dari angka 0</p>
+    
+    <button  onclick="maju()">Maju</button>
+    <button  onclick="mundur()">Mundur</button>
+
+    <div id="hasil"></div>
+    <script>
+
+        let angka = 0;
+        let hasil = "";
+
+        function maju() {
+            angka ++;
+            document.getElementById("hasil").innerHTML = angka ;
+        }
+
+        function mundur(){
+            angka --;
+            document.getElementById("hasil").innerHTML = angka ;
+
+        }
+    </script>
+</body>
+</html>

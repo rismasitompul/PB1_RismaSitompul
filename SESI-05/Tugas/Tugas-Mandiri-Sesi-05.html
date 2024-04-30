@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Mandiri Sesi - 05</title>
+</head>
+<body>
+    
+    <label> Pesan : </label> <input type="text" id="pesan" placeholder="masukkan Pesan !"> <br><br>
+    <label> Berapa Kali : </label> <input type="text" id="jumlah" placeholder="Masukkan angka"> <br><br>
+    <button onclick="cetak()">Cetak</button>
+    <ol id="orderedList"></ol>
+
+
+    <script>
+        function cetak(){
+            let pesan = document.getElementById("pesan").value;
+            let jumlah = document.getElementById("jumlah").value;
+            let orderedList = document.getElementById("orderedList");
+
+            orderedList.innerHTML="";
+
+            let i = 1;
+
+            // looping
+            while (i <= jumlah) {
+                let listItem = document.createElement("li");
+                listItem.textContent = pesan;
+                orderedList.appendChild(listItem);
+                i++
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

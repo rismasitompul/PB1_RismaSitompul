@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JS</title>
+</head>
+<body>
+    
+    <div id="nilai">Nilai Anda :</div>
+    <div id="hasil">Huruf Mutu :</div>
+    
+    <script>
+
+        let nilai = 80;
+        let hasil = "";
+
+        if (nilai >=80 && nilai <= 100) {
+            hasil = "A";
+        } else if  (nilai>= 70 && nilai <= 79 ){
+            hasil="B";
+        }else if  (nilai>= 60 && nilai <= 69 ){
+            hasil="C";
+        }else if  (nilai>= 50 && nilai <= 59 ){
+            hasil="D";
+        }else {
+            hasil ="E";
+        }
+
+        // return hasil;
+
+        document.getElementById("nilai").innerHTML= "Nilai Anda : " + nilai;
+        document.getElementById("hasil").innerHTML= "Huruf Mutu : " + hasil;
+    </script>
+
+</body>
+</html>
