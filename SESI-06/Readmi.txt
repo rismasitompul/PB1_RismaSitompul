@@ -1,0 +1,198 @@
+DOM 
+-----
+-> Document Object Model , dokumen HTML yang dimodelkan dalam sebuah objek
+
+Objek dari model ini menyediakan sekumpulan fungsi dan atribut / data yang bisa kita manfaatkan 
+dalam membuat program Javascript. Ini yang disebut API (Application Programing Interface)
+
+
+getElementById ()  -> Fungsi untuk memilih elemen berdasarkan atribut id 
+getElementByName() -> memilih elemen berdasarkan atribut name 
+getElementByClassName() -> memilih elemen berdasarkan atribut class 
+getElementByTagName() -> memilih elemen berdasarkan nama tag 
+getElementByTagNameNS() -> memilih elemen berdasarkan nama tag 
+querySelector() -> memilih elemen berdasarkan query 
+querySelectorAll()  -> memilih elemen berdasarkan query 
+
+ 
+
+ Membuat Elemen dengan DOM API 
+ -------------------------------
+
+ 1. createElement
+    document.createElement('p');
+ 2. Cara menambahkan ke body dokumen , dengan fungsi append() 
+    - Buat di file HTML
+        <script>
+            // Membuat element H1
+            let judul = document.createElement("h1");
+
+            // Mengisi kontent elemen
+            judul.textContent = "Belajar JavaScript";
+
+            // Menambahkan element ke dalam tag body
+            document.body.append(judul);
+        </script>
+
+3. Menghapusnya dengan fungsi remove()
+     <h2 id="judul2">Delete Saya !</h2>
+    
+    <script>
+       
+        // Memilih elemen berdasarkan ID
+        let h2 = document.getElementById('judul2');
+
+
+        // Menghapus elemen yang sudah dipilih
+        h2.remove();
+
+
+        console.log("Elemen sudah dihapus");
+        console.log(h2);
+    </script>
+
+4. Mengubah Warna menggunakan DOM
+
+
+
+REGEX (Regular Expression) | RegExp
+-> suatu mekanisme pencocokan pola yang dibuat dengan menggunakan karakter-karakter
+khusus. Fungsi , memeriksa apakah sebuah inputan apakah sesuai apa belum (test),
+untuk membuat fitur pencarian (search) atau penggantian string (replace).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SESI - 06 
+--------------------------
+
+materi tugas (resolved) sesi 5:
+----------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Loop For</title>
+  </head>
+  <body>
+    <h3>Belajar Loop For</h3>
+    <div id="makan"></div>
+    <label for="makanan">Makanan Anda:</label>
+    <br />
+    <input type="text" id="makanan" placeholder="input makanan kesukaan anda" />
+    <br />
+    <br />
+    <label for="nama">Nama Anda:</label>
+    <br />
+    <input type="text" id="nama" placeholder="input nama anda" />
+    <br />
+    <br />
+    <label for="total_loop">Total Loop:</label>
+    <br />
+    <input type="number" id="total" placeholder="input total loop" />
+    <br />
+    <br />
+
+    <!-- button click -->
+    <button onclick="print()">Print Makanan Kesukaan</button>
+    <!-- list -->
+    <ul id="list"></ul>
+
+    <script>
+      let nomor = 0;
+      console.log("nomor anda: " + nomor);
+      nomor = 5;
+      let hitung = 0;
+      for (let index = 0; index < nomor; index++) {
+        console.log("nomor saat ini (loop): " + index);
+        document.getElementById("makan").innerHTML += nomor;
+        hitung += index;
+      }
+
+      //   check type
+      console.log(typeof index);
+      console.log("nomor saat ini: " + hitung);
+
+      //   fungsi print
+      function print() {
+        let makanan = document.getElementById("makanan");
+        let dt = document.getElementById("list");
+        let nama = document.getElementById("nama");
+        let hasil = "";
+        console.log("nama anda : " + nama.value + "\n\nnegara : indonesia");
+
+        // looping masih berdasarkan banyaknya data array (total 3 "index 0,1,2")
+        let list_makanan = ["nasi goreng", "mie goreng", "ayam bakar"];
+        // method 1 (forEach)
+
+        list_makanan.forEach((element) => {
+          nomor++;
+          console.log(element);
+          hasil += `No. ${nomor} Nama Anda : ${nama.value} - Makanan Anda : ${makanan.value}`;
+          hasil += "<br>";
+          dt.innerHTML = hasil;
+        });
+        // method 2 (for)
+        // method 3 (while)
+        // method 4 (do while)
+      }
+    </script>
+  </body>
+</html>
+----------------------------------------------------------------------------------------------------------------
+
+sesi 6:
+materi tentang dom dan regex
+
+    
+ tugas mandiri sesi 6:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Animasi Warna</title>
+  </head>
+  <body>
+    <h3>Belajar Animasi Warna</h3>
+    <p id="text1"></p>
+    <p id="text2"></p>
+    <p id="text3"></p>
+
+    <script>
+      let text = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolorum
+      voluptate perferendis labore numquam iusto voluptatibus nulla beatae,
+      deserunt fuga nobis harum repellat, aliquam at ut necessitatibus non
+      molestiae atque.`;
+
+      let check = /lorem/g;
+
+      if (check) {
+        //jalanin animasi
+      }
+
+      //   function animasi
+      function animasi() {
+        // set interval
+        // set timeout
+      }
+    </script>
+  </body>
+</html>
+----------------------------------------------------------------------------------------------------------------

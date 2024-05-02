@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar DOM Javascript</title>
+</head>
+<body>
+
+    <h2 id="judul2">Delete Saya !</h2>
+    
+    <script>
+        // Membuat element H1
+        //  let judul = document.createElement("h1");
+
+        // Mengisi kontent elemen
+        //  judul.textContent = "Belajar JavaScript";
+
+        // Menambahkan element ke dalam tag body
+        //  document.body.append(judul);
+
+
+        // Memilih elemen berdasarkan ID
+        let h2 = document.getElementById('judul2');
+
+
+        // Menghapus elemen yang sudah dipilih
+        h2.remove();
+
+
+        console.log("Elemen sudah dihapus");
+        console.log(h2);
+
+
+        
+    </script>
+</body>
+</html>

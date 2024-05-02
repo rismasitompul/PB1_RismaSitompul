@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>| TPM SESI-06 | Manipulasi DOM | Risma Wati Sitompul</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<p id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptatibus, quasi quis unde nesciunt blanditiis!</p>
+<p id="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, molestias vitae! Aliquid consectetur officia nam.</p>
+<p id="text3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ipsum assumenda odit, alias consequuntur modi!</p>
+
+<script>
+    // Fungsi untuk menghasilkan kode warna acak dalam format heksadesimal
+    function randomColor() {
+        return '#' + Math.floor(Math.random() * 16777215).toString(16);
+    }
+
+    // Fungsi untuk menerapkan animasi perubahan warna pada elemen
+    function animasi(element) {
+        setInterval(function() {
+           let newColor = randomColor();
+            element.style.color = newColor;
+        }, 1000); // set timeout
+    }
+
+    // Mendapatkan semua elemen <p> 
+   let paragraphs = document.querySelectorAll("p");
+
+    // Loop melalui setiap paragraf
+    paragraphs.forEach(function(paragraph) {
+        let text = paragraph.textContent; // Mendapatkan teks dari setiap paragraf
+        if (text.includes("Lorem")) {
+            // Jika teks paragraf mengandung kata "Lorem", menerapkan animasi perubahan warna
+            animasi(paragraph);
+        }
+    });
+</script>
+</body>
+</html>
